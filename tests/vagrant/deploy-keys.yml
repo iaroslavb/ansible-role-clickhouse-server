@@ -1,0 +1,10 @@
+---
+#
+# add user `ansible` and public ssh keys
+#
+- name: common software and configuration
+  hosts: all
+  become: yes
+  become_method: sudo
+  roles:
+    - iaroslavb.node-deploy
